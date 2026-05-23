@@ -194,12 +194,12 @@ Se ha realizado una auditoría geomecánica de los frentes con rendimientos infe
 
     if (promptText.includes('plan de contingencia') || promptText.includes('mitigar esta desviación')) {
       const tipoMatch = promptText.match(/Tipo:\s*([^\n]+)/);
-      const mensajeMatch = promptText.match(/Mensaje:\s*([^\n]+)/);
+      // const mensajeMatch = promptText.match(/Mensaje:\s*([^\n]+)/);
       const rocaMatch = promptText.match(/Roca:\s*([^\n]+)/);
       const factorMatch = promptText.match(/Factor:\s*([^\n]+)/);
       
       const tipo = tipoMatch ? tipoMatch[1] : 'Desviación Crítica';
-      const mensaje = mensajeMatch ? mensajeMatch[1] : 'Desviación de voladura';
+      // const mensaje = mensajeMatch ? mensajeMatch[1] : 'Desviación de voladura';
       const roca = rocaMatch ? rocaMatch[1] : 'IV/V';
       const factor = factorMatch ? factorMatch[1] : 'Elevado';
 
