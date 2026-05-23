@@ -26,8 +26,8 @@ export default function MineOpsApp() {
   const [fechaInicio, setFechaInicio] = useState('');
   const [fechaFin, setFechaFin] = useState('');
   
-  const [sortBy, setSortBy] = useState<keyof MineData>('fecha');
-  const [sortOrder, setSortOrder] = useState<'asc'|'desc'>('desc');
+  const [sortBy] = useState<keyof MineData>('fecha');
+  const [sortOrder] = useState<'asc'|'desc'>('desc');
   const [searchTerm, setSearchTerm] = useState('');
   const [autoLoadStatus, setAutoLoadStatus] = useState('pending');
 
@@ -79,7 +79,6 @@ export default function MineOpsApp() {
   const opcionesLabor = useMemo(() => ['Todas', ...Array.from(new Set(data.map(d => d.labor)))].sort(), [data]);
   const opcionesRoca = useMemo(() => ['Todas', ...Array.from(new Set(data.map(d => d.tipoRoca)))].sort(), [data]);
   const opcionesEtapa = useMemo(() => ['Todas', ...Array.from(new Set(data.map(d => d.etapa)))].sort(), [data]);
-  const opcionesDisparo = useMemo(() => ['Todas', ...Array.from(new Set(data.map(d => d.tipoDisparo)))].sort(), [data]);
 
   const filteredData = useMemo(() => {
     return data.filter(item => {

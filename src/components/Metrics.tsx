@@ -1,5 +1,4 @@
-import React from 'react';
-import type { Stats, Alert } from '../types';
+import type { Stats } from '../types';
 
 interface MetricsProps {
   stats: Stats;

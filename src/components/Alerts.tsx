@@ -1,4 +1,3 @@
-import React from 'react';
 import type { Alert } from '../types';
 
 interface AlertsProps {

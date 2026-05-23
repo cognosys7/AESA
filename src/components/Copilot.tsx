@@ -1,4 +1,3 @@
-import React from 'react';
 import { Bot, Loader2 } from 'lucide-react';
 
 interface CopilotProps {
